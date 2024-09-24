@@ -1,5 +1,7 @@
 package Iterator;
 
+import utils.Point;
+
 public class IteratorApp {
 
     public static void main(String[] args) {

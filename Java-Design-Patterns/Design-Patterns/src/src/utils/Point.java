@@ -1,4 +1,4 @@
-package Iterator;
+package utils;
 
 public class Point {
 
