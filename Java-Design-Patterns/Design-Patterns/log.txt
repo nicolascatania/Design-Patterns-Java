@@ -1,0 +1,4 @@
+Logger initiated
+2024-09-25 15:04:47 - Hello, first message from the first reference to the logger.
+2024-09-25 15:04:47 - Hello, second message from the first reference to the logger.
+2024-09-25 15:04:47 - Hello, third message from the second reference to the logger.
