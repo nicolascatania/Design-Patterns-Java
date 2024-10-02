@@ -4,6 +4,9 @@ In this project, I explain some design patterns and provide example code.
 ## Factory Method
 The Factory Method pattern (a creational pattern) is useful for encapsulating object creation logic. It allows you to delegate the instantiation of objects to a specific "concrete factory method," providing cleaner and more understandable code. This concept is explained in detail through comments in the code, which includes an engaging scenario where the specific class to instantiate is not known in advance. One downside of this design pattern is that it can lead to a proliferation of classes in your project.
 
+## Abstract Factory Method
+The Abstract Factory pattern uses polymorphism and interfaces to allow the instantiation of objects that are related by family without specifying their concrete classes. This reduces coupling and enhances flexibility, enabling the application to work with different families of objects seamlessly. This pattern is particularly useful in scenarios where the system needs to be independent of the way the objects are created, composed, and represented, allowing for easier maintenance and scalability.
+
 ## Composite
 The Composite pattern lets you manipulate multiple instances of different object types that are related through inheritance simultaneously. For example, think of an army with different types of soldiers or translating various shapes (like selecting multiple forms in a drawing application and moving all of them at the same time).
 
