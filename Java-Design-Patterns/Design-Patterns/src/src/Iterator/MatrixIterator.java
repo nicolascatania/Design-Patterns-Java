@@ -19,10 +19,16 @@ public class MatrixIterator<T> implements Iterator<T> {
     @Override
     public T next() {
         T element = matrix.get(i, j);
-        j++;
-        if (j == matrix.getCols()) {
+        j+=2;
+        if (j >= matrix.getCols()) {
             i++;
-            j = 0;
+            if(i%2==0){
+                j = 0;
+            }
+            else{
+                j = 1;
+            }
+
         }
         return element;
     }

@@ -12,13 +12,14 @@ public class IteratorApp {
                 {   new Point(0,0), new Point(13,14), new Point(-5,-5)}
         };
         Matrix<Point> matrix = new Matrix<>(points);
-        for(Point p1 : matrix) {
-            for (Point p2 : matrix) {
-                if(p1 != p2 && p1.distanceToPoint(p2)<distance) {
-                    System.out.println("Points that are to a distance lower than " + distance + " " + p1 + " " + p2);
-                }
-            }
+        MatrixIterator<Point> iterator = new MatrixIterator<Point>(matrix);
+
+        //quick change, the iterator will iterate through the matrix in a chess board pattern.
+        while(iterator.hasNext()) {
+            Point point = iterator.next();
+            System.out.println(point);
         }
+
     }
 
 
